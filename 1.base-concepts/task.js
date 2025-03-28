@@ -1,7 +1,6 @@
 "use strict"
 
 function solveEquation(a, b, c) {
-	let arr = [];
 	let discriminant = b ** 2 - 4 * a * c;
 	if (discriminant < 0) {
 		return [];
@@ -14,6 +13,7 @@ function solveEquation(a, b, c) {
 		return [root1, root2];
 	}
 }
+console.log (solveEquation(1, -3, 2));
 
 function calculateTotalMortgage(percent, contribution, amount, countMonths) {
   let monthPercent = (percent / 100) / 12;
